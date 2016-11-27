@@ -45,5 +45,13 @@ isDefinedAt 是指定偏函数的场景。
 
 apply是 使用函数。
 
+# spark
+
+## spark 问题
+
+
+
+### spark driver oom
+
 
 
