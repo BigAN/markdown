@@ -258,4 +258,13 @@ AUC
 
 中间
 
-1. ​
+
+
+## 样本更新
+
+拦截表:
+
+```
+origindb.wmrisk02_waimai_risk__message_center_ugc_punish_record
+mart_waimai_risk.wm_risk_strategy_hit_record
+```
