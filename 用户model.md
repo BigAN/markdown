@@ -268,3 +268,8 @@ AUC
 origindb.wmrisk02_waimai_risk__message_center_ugc_punish_record
 mart_waimai_risk.wm_risk_strategy_hit_record
 ```
+
+
+## 新的模型框架
+
+使用  period , today , config, dim_user_feature,train_data
