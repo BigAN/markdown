@@ -12,7 +12,19 @@ typora-copy-images-to: ./images
 $$
 h_\theta = \sum_{i=0}^n\theta_ix_i = \theta^Tx
 $$
+
+
+
+
+
+
+
+
 损失函数如下
+
+
+
+
 $$
 J(\theta) = 1/2\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)}))^2
 $$
