@@ -2,11 +2,13 @@
 
 ## 样本
 
-label:广告展示->广告点击->购买->二次购买
+label:所有展示->点击->购买->二次购买
 
-label:广告展示->广告点击->购买 && 所有展示->点击->二次购买
+**使用自然展示（包括广告）作为所有展示。**
 
+用哪个展示？
 
+可能的问题？价格低，是不是 reorder 高？ 可以接受。
 
 ## 特征
 
@@ -20,7 +22,6 @@ label:广告展示->广告点击->购买 && 所有展示->点击->二次购买
 > _user_sum_days_since_prior_order: 距离上次购买时间(和)
 > _user_mean_days_since_prior_order: 距离上次购买时间(均值)
 > time_since_last_order
->
 > ```
 
 商户特征
@@ -38,7 +39,22 @@ label:广告展示->广告点击->购买 && 所有展示->点击->二次购买
 
 ```
 up_order_rate 该商户的购买的次数/总的购买次数
-_up_order_since_last_order data._user_total_orders - data._up_last_order_number 用户距离上次购买单量
+up_order_since_last_order data._user_total_orders - data._up_last_order_number 用户距离上次购买单量
+```
+
+地理特征
+
+```
+蜂窝类型(学校、工作区....)
+城市id等
+```
+
+
+
+时间特征
+
+```
+周末/工作日， 单天： 早餐 / 午餐 / 下午茶 / 晚餐 / 夜宵
 ```
 
 
@@ -51,7 +67,7 @@ reordered
 
 
 
-## 模型
+## 模型  
 
 xgboost
 
@@ -74,9 +90,33 @@ params = {
 }
 ```
 
-## 应用
-,,,,,,,
- 思考
+评价指标
 
-## 思考
+logloss ，auc 
+
+## 应用
+
+替代现有的基于距离的体验分。
+
+长期的观测，as模拟？
+
+是不是要做离线模拟？
+
+最应该观测的指标？
+
+​	二次购买率提升？
+
+实验方式。
+
+​	圈用户。
+
+## 分析
+
+reorder 与ctr/cvr 的分布关系。
+
+
+
+
+
+
 
